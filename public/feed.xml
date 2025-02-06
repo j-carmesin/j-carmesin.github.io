@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title></title>
+	<subtitle></subtitle>
+	<link href="https://example.com/feed.xml" rel="self"/>
+	<link href="https://example.com/"/>
+	<updated>2024-09-21T13:49:57Z</updated>
+	<id>https://example.com/</id>
+	<author>
+		<name>Johannes Carmesin</name>
+		<email>Johannes.Carmesin@math.tu-freiberg.de</email>
+	</author>
+</feed>
