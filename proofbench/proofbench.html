@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProofBench Initiative</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2f2f2f;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .main-image {
+      text-align: center;
+      background-color: white;
+      padding: 1em;
+    }
+    .main-image img {
+      max-width: 600px;
+      height: auto;
+    }
+    .mission-toggle {
+      display: flex;
+      justify-content: center;
+      margin: 1em auto;
+    }
+    .toggle-button {
+      padding: 0.5em 1em;
+      border: 1px solid #2f2f2f;
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #2f2f2f;
+      margin: 0 0.5em;
+    }
+    .active {
+      background-color: #2f2f2f;
+      color: white;
+    }
+    .mission-content {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 2em;
+      padding: 1em;
+      background-color: white;
+      border-radius: 8px;
+    }
+    section {
+      max-width: 800px;
+      margin: 2em auto;
+      background-color: white;
+      padding: 1em;
+      border-radius: 8px;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ProofBench Initiative</h1>
+  </header>
+
+  <div class="main-image">
+    <img src="The_Bench.png" alt="QED Characters on a Bench">
+  </div>
+
+  <div class="mission-toggle">
+    <button class="toggle-button active" onclick="showMission('general')" id="btn-general">General Mission</button>
+    <button class="toggle-button" onclick="showMission('math')" id="btn-math">For Mathematicians</button>
+  </div>
+
+  <div class="mission-content" id="mission-text" style="min-height: 120px;">
+    <p>
+      ProofBench aims to establish a benchmark suite for mathematical proof verification and generation, enabling meaningful comparison across AI systems. We believe that progress for AI in mathematics needs more than raw performance improvements — it requires deep ideas and key insights from experts in the field. Our goal is to help shape that future by making important mathematical insights available in structured, accessible form.
+    </p>
+  </div>
+
+  <section>
+    <h2>Workshops</h2>
+    <p>The first ProofBench workshop takes place from <strong>September 22 to October 3, 2025</strong> in Freiberg. Confirmed participants as of June 7:</p>
+    <ul>
+      <li>Justin Asher</li>
+      <li>Nathan Bowler (Hamburg)</li>
+      <li>Johannes Carmesin (TU Freiberg)</li>
+      <li>Joseph Devine (TU Freiberg)</li>
+      <li>Matthias Hamann (Hamburg)</li>
+      <li>Julian Holstein (Hamburg)</li>
+      <li>Nicolai Kraus (Nottingham)</li>
+      <li>Matt Kroeker (TU Freiberg)</li>
+      <li>Jan Kurkofka (TU Freiberg)</li>
+      <li>Nicola Lorenz (Hamburg)</li>
+      <li>Aref Mohammadzadeh (Nottingham)</li>
+      <li>Tim Planken (TU Freiberg)</li>
+      <li>Auguste Poiroux (EPFL)</li>
+      <li>Martin Schneider (TU Freiberg)</li>
+      <li>Jacob Stegemann (Hamburg)</li>
+      <li>Will Turner (TU Freiberg)</li>
+      <li>Martin Winter (TU Berlin)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Job Openings</h2>
+    <p>We are planning to advertise one postdoctoral position in October 2025, with an anticipated starting date in January 2026 or shortly thereafter. More details will follow on this page.</p>
+  </section>
+
+  <section>
+    <h2>How to Get Involved?</h2>
+    <p>
+      Are you interested in collaborating with ProofBench? We welcome academic and industry partnerships, especially for researchers looking to co-develop or evaluate benchmarks with us. If you are planning a grant application or wish to partially transfer funding to ProofBench, get in touch. We have <strong>strategic funds available and institutional support</strong> to make competitive offers to strong partners.
+    </p>
+  </section>
+
+  <section>
+    <h2>Founding Institutions</h2>
+    <p>ProofBench is currently supported by TU Freiberg, University of Hamburg, and University of Nottingham. We are actively expanding this network and are happy to hear from institutions interested in contributing to the foundational phase of ProofBench.</p>
+  </section>
+
+  <script>
+    function showMission(type) {
+      const generalText = `
+        <p>
+          ProofBench aims to establish a benchmark suite for mathematical proof verification and generation, enabling meaningful comparison across AI systems. We believe that the future of AI in mathematics depends not only on raw performance, but on deep, human-comprehensible understanding. Our goal is to help shape that future by making important mathematical insights available in structured, accessible form.
+        </p>`;
+      const mathText = `
+        <p>
+          When AI makes bold claims about progress in mathematics, this is a golden age for mathematicians. We should be funded not just for doing great mathematics, but also for presenting our most important work in forms suitable for training and testing AI. ProofBench is a platform to facilitate exactly that.
+        </p>`;
+
+      document.getElementById('mission-text').innerHTML = type === 'general' ? generalText : mathText;
+
+      document.getElementById('btn-general').classList.toggle('active', type === 'general');
+      document.getElementById('btn-math').classList.toggle('active', type === 'math');
+    }
+  </script>
+</body>
+</html>
