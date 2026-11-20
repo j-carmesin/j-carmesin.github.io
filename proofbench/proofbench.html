@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProofBench Initiative</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProofBench — 2025 archive</title>
+<style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -23,7 +24,7 @@
       padding: 1em;
     }
     .main-image img {
-      max-width: 600px;
+      max-width: min(600px, 100%);
       height: auto;
     }
     .mission-toggle {
@@ -63,72 +64,65 @@
       padding-bottom: 0.3em;
     }
   </style>
-</head>
-<body>
-  <header>
-    <h1>ProofBench Initiative</h1>
-  </header>
-
-  <div class="main-image">
-    <img src="The_Bench.png" alt="QED Characters on a Bench">
-  </div>
-
-  <div class="mission-toggle">
-    <button class="toggle-button active" onclick="showMission('general')" id="btn-general">General Mission</button>
-    <button class="toggle-button" onclick="showMission('math')" id="btn-math">For Mathematicians</button>
-  </div>
-
-  <div class="mission-content" id="mission-text" style="min-height: 120px;">
-    <p>
+<link href="/styles/archive.css" rel="stylesheet"/></head>
+<body class="archive-page">
+<header>
+<h1>ProofBench — 2025 archive</h1><p class="archive-notice">Archive of the 2025 ProofBench initiative and workshop. Descriptions of participants, partnerships and funding below belong to that period. For current work, see <a href="/ai-mathematics/">AI and mathematics</a> and <a href="https://lp-bench.github.io/">LPBench</a>. <a href="/events/">Events</a>.</p>
+</header>
+<div class="main-image">
+<img alt="QED Characters on a Bench" decoding="async" height="1024" loading="lazy" src="The_Bench.png" width="1024"/>
+</div>
+<div class="mission-toggle">
+<button class="toggle-button active" id="btn-general" onclick="showMission('general')">General Mission</button>
+<button class="toggle-button" id="btn-math" onclick="showMission('math')">For Mathematicians</button>
+</div>
+<div class="mission-content" id="mission-text" style="min-height: 120px;">
+<p>
       ProofBench aims to establish a benchmark suite for mathematical proof verification and generation, enabling meaningful comparison across AI systems. We believe that progress for AI in mathematics needs more than raw performance improvements — it requires deep ideas and key insights from experts in the field. Our goal is to help shape that future by making important mathematical insights available in structured, accessible form.
     </p>
-  </div>
-
-  <section>
-    <h2>Workshops</h2>
-    <p>The first ProofBench workshop takes place from <strong>September 22 to October 3, 2025</strong> in Freiberg. Confirmed participants as of June 7:</p>
-    <ul>
-      <li>Justin Asher</li>
-      <li>Nathan Bowler (Hamburg)</li>
-      <li>Johannes Carmesin (TU Freiberg)</li>
-      <li>Joseph Devine (TU Freiberg)</li>
-      <li>Sarah Frenkel (Birmingham)</li>
-      <li>Matthias Hamann (Hamburg)</li>
-      <li>Julian Holstein (Hamburg)</li>
-      <li>Nicolai Kraus (Nottingham)</li>
-      <li>Matt Kroeker (TU Freiberg)</li>
-      <li>Jan Kurkofka (TU Freiberg)</li>
-      <li>Nicola Lorenz (Hamburg)</li>
-      <li>Aref Mohammadzadeh (Nottingham)</li>
-       <li>Felix Pernegger (Bonn)</li>
-      <li>Tim Planken (TU Freiberg)</li>
-      <li>Auguste Poiroux (EPFL)</li>
-      <li>Martin Schneider (TU Freiberg)</li>
-      <li>Jacob Stegemann (Hamburg)</li>
-      <li>Will Turner (TU Freiberg)</li>
-      <li>Martin Winter (TU Berlin)</li>
-    </ul>
-  </section>
-
-  <!---
+</div>
+<section>
+<h2>Workshops</h2>
+<p>The first ProofBench workshop takes place from <strong>September 22 to October 3, 2025</strong> in Freiberg. Confirmed participants as of June 7:</p>
+<ul>
+<li>Justin Asher</li>
+<li>Nathan Bowler (Hamburg)</li>
+<li>Johannes Carmesin (TU Freiberg)</li>
+<li>Joseph Devine (TU Freiberg)</li>
+<li>Sarah Frenkel (Birmingham)</li>
+<li>Matthias Hamann (Hamburg)</li>
+<li>Julian Holstein (Hamburg)</li>
+<li>Nicolai Kraus (Nottingham)</li>
+<li>Matt Kroeker (TU Freiberg)</li>
+<li>Jan Kurkofka (TU Freiberg)</li>
+<li>Nicola Lorenz (Hamburg)</li>
+<li>Aref Mohammadzadeh (Nottingham)</li>
+<li>Felix Pernegger (Bonn)</li>
+<li>Tim Planken (TU Freiberg)</li>
+<li>Auguste Poiroux (EPFL)</li>
+<li>Martin Schneider (TU Freiberg)</li>
+<li>Jacob Stegemann (Hamburg)</li>
+<li>Will Turner (TU Freiberg)</li>
+<li>Martin Winter (TU Berlin)</li>
+</ul>
+</section>
+<!---
   <section>
     <h2>Job Openings</h2>
     <p>We are planning to advertise one postdoctoral position in October 2025, with an anticipated starting date in January 2026 or shortly thereafter. More details will follow on this page.</p>
   </section>
 --->
-  <section>
-    <h2>How to Get Involved?</h2>
-    <p>
+<section>
+<h2>How to Get Involved?</h2>
+<p>
       Are you interested in collaborating with ProofBench? We welcome academic and industry partnerships, especially for researchers looking to co-develop or evaluate benchmarks with us. If you are planning a grant application or wish to partially transfer funding to ProofBench, get in touch. We have <strong>strategic funds available and institutional support</strong> to make competitive offers to strong partners.
     </p>
-  </section>
-
-  <section>
-    <h2>Founding Institutions</h2>
-    <p>ProofBench is currently supported by TU Freiberg, University of Hamburg, and University of Nottingham. We are actively expanding this network and are happy to hear from institutions interested in contributing to the foundational phase of ProofBench.</p>
-  </section>
-
-  <script>
+</section>
+<section>
+<h2>Founding Institutions</h2>
+<p>ProofBench is currently supported by TU Freiberg, University of Hamburg, and University of Nottingham. We are actively expanding this network and are happy to hear from institutions interested in contributing to the foundational phase of ProofBench.</p>
+</section>
+<script>
     function showMission(type) {
       const generalText = `
         <p>

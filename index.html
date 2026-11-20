@@ -1,240 +1,88 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/a11y-code.css">
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/cone_over_K5_t.png">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/styles/a11y-code.css" rel="stylesheet"/>
+<link href="/assets/images/cone_over_K5_t.png" rel="icon" sizes="96x96" type="image/png"/>
 
-  <style>
-  	:root{--white:white;--black:#191919;--gray:#212121;--gray-2:#a6a6a6;--blue:#0069b4;--blue-2:#00497f;--ff-sans-serif:Roboto,Helvetica,sans-serif;--ff-serif:Garamond,serif;--ff-code:monospace;--ff-freiberg:Futura,Arial,sans-serif}*{box-sizing:border-box}body{--clr-background:var(--white);--clr-text:var(--black);--clr-text-secondary:var(--gray-2);--clr-link:var(--blue);--ff-current:var(--ff-sans-serif);background:var(--clr-background);color:var(--clr-text);font-family:var(--ff-current);padding:12px;line-height:1.5rem}body.dark{--clr-background:var(--black);--clr-text:var(--white);--clr-link:var(--blue-2)}.main-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 4fr;gap:3rem}.topic-container{max-width:1000px;margin:auto;display:grid;grid-template-columns:1fr 4fr;gap:1rem;grid-template-areas:"column-1 column-2"}.ti:first-child{grid-area:column-1}.ti:nth-child(2){grid-area:column-2}.ti img{display:block;margin-left:auto;margin-right:auto;margin-top:1em;margin-bottom:1em}main{min-height:86vh;padding-top:20px}.side-nav{text-align:end;line-height:2rem}.side-nav .site-title{all:unset}.side-nav .site-title:hover{all:unset;cursor:pointer}.side-nav a{all:unset;padding:8px;cursor:pointer}.side-nav a.active,.side-nav a:hover{background:#00497f;color:var(--clr-background)}.side-nav ul{list-style:none}.side-nav ul li{margin:.5rem 0}.side-nav-inner{padding:20px;position:sticky;top:0}a{color:var(--clr-link)}.breadcrumbs{margin-bottom:1rem}article h1{font-size:2rem;line-height:2.5rem;margin-top:15px}article h1>a,article h2>a,article h3>a{color:var(--clr-text);text-decoration:none}article a:hover{color:var(--blue-2)}article img{max-width:100%}img.portrait{float:right;margin:10px,margin-top:0px}.thumbnail-container img{max-width:100%}.post-entries{padding:0;list-style:none}.post-entry{margin-bottom:4rem}.post-entry__title a{color:var(--clr-text)}.post-entry__title a:hover{color:var(--clr-link)}.post-entry__date{color:var(--clr-text-secondary)}.bibliography ul{padding:0;list-style:none}.bibliography li{padding-left:3rem;text-indent:-3rem;text-align:left;margin:1rem 0 .2rem 0}.main-footer{text-align:center;margin-top:4rem}.post-author{display:none}code{font-size:1.1em}pre{font-size:1em;overflow-x:auto;font-family:var(--ff-code);padding:12px;display:grid}pre code{overflow-x:auto}select{padding:2px;border:1px solid var(--clr-text);background-color:var(--clr-background);color:var(--clr-text);font-size:1em}button{padding:4px;border:1px solid var(--clr-text);color:var(--clr-text);background-color:transparent;cursor:pointer}.side-nav .controls{margin-top:2rem}td{vertical-align:top;padding-right:1em}@media (max-width:1200px){.main-container{grid-template-columns:1fr 3fr}}@media (max-width:720px){main{padding-top:5px}.side-nav-inner{padding-bottom:0}.main-container{grid-template-columns:1fr}.topic-container{grid-template-columns:1fr;grid-template-areas:" column-2 " " column-1 "}img.portrait{float:none}}@media print{body.dark{--clr-background:#fff;--clr-text:#000;--clr-link:var(--blue)}.side-nav{display:none}.main-footer{display:none}.post-author{display:block}}
-  </style>
-  <meta property="og:title" content="Prof Johannes Carmesin - Academic Website">
-  <meta property="og:image" content="">
-  <meta property="og:description" content="Website of Prof. Dr. Johannes Carmesin, a Professor for Discrete Structures in Freiberg, working at the interface of Combinatorics, Topology, and Algorithms.">
-  <meta name="description" content="Website of Prof. Dr. Johannes Carmesin, a Professor for Discrete Structures in Freiberg, working at the interface of Combinatorics, Topology, and Algorithms.">
-  <!-- Google verification -->
-  <meta name="google-site-verification" content="EKJWRsDtZ1bQqNvo9WOFtTuoBNWuKCShs_g8KZmyxlc" />
-  <meta name="keywords" content="Johannes Carmesin, academic website, graph theory, matroids, 3D combinatorics">
-  <meta name="theme-color" content="#0f0f11">
-  <title>Prof Johannes Carmesin - Academic Website | </title>
-</head>
-
-  <body>
-    <div class="main-container">
-      <aside class="side-nav">
-        <div class="side-nav-inner">
-          <!-- <a class="site-title" href="/">
+<meta content="Johannes Carmesin" property="og:title"/>
+<meta content="" property="og:image"/>
+<meta content="Johannes Carmesin, Professor of Discrete Structures at TU Freiberg. Research, team and publications in graph theory and related areas." property="og:description"/>
+<meta content="Johannes Carmesin, Professor of Discrete Structures at TU Freiberg. Research, team and publications in graph theory and related areas." name="description"/>
+<!-- Google verification -->
+<meta content="EKJWRsDtZ1bQqNvo9WOFtTuoBNWuKCShs_g8KZmyxlc" name="google-site-verification"/>
+<meta content="Johannes Carmesin, academic website, graph theory, matroids, 3D combinatorics" name="keywords"/>
+<meta content="#0f0f11" name="theme-color"/>
+<title>Johannes Carmesin | Discrete Structures · TU Freiberg</title>
+<link href="/styles/site.css" rel="stylesheet"/><link href="https://j-carmesin.github.io/" rel="canonical"/></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<div class="main-container">
+<aside class="side-nav">
+<div class="side-nav-inner">
+<!-- <a class="site-title" href="/">
 
           </a> -->
-          <nav>
-  <ul><li>
-        <a
-          class="nav-link
-
-               active
-
-          "
-          href="/"
-        > Home</a>
-      </li><li>
-        <a
-          class="nav-link
-
-
-
-          "
-          href="/contact/"
-        > Contact</a>
-      </li><li>
-        <a
-          class="nav-link
-
-
-
-          "
-          href="/publications/"
-        > Publications</a>
-      </li><li>
-        <a
-          class="nav-link
-
-
-
-          "
-          href="/group_papers/"
-        > Group papers</a>
-      </li><li>
-        <a
-          class="nav-link
-
-
-
-          "
-          href="/seminar/"
-        > Research Seminar</a>
-      </li><li>
-        <a
-          class="nav-link
-
-
-
-          "
-          href="/events/"
-        > Events</a>
-      </li><li>
-        <a
-          class="nav-link
-
-
-
-          "
-          href="/lectures/"
-        > Online Lecture</a>
-      </li><li>
-        <a
-          class="nav-link
-
-
-
-          "
-          href="/photos/"
-        > Photos</a>
-      </li></ul>
-</nav>
-
-        </div>
-      </aside>
-      <main>
-
-
-<article>
-    <h1>Prof Johannes Carmesin - Academic Website</h1>
-
-
-<img class="portrait" height="200" src="/assets/images/johannes2.jpg"  alt="Johannes Carmesin">
+<nav aria-label="Main navigation"><ul><li><a aria-current="page" class="active" href="/">Home</a></li><li><a href="/publications/">Publications</a></li><li><a href="/group_papers/">Group papers</a></li><li><a href="/ai-mathematics/">AI and mathematics</a></li><li><a href="https://mekroeker.github.io/seminar.html">Research seminar</a></li><li><a href="/events/">Events</a></li><li><a href="/photos/">Photos</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
+</div>
+</aside>
+<main id="main" tabindex="-1">
+<article class="home-page"><header class="profile"><div class="profile-copy">
+<h1>Johannes Carmesin</h1><p class="affiliation">Professor of Discrete Structures · TU Freiberg</p>
+<div class="profile-contact"><span class="profile-email">Johannes.Carmesin@gmail.com</span><nav aria-label="Profile links" class="quick-links"><a href="/assets/CV.pdf">CV</a><a href="/publications/">Publications</a></nav></div>
+<p>The Discrete Structures group at TU Freiberg works on a broad range of topics in graph theory and related areas, including topology and theoretical computer science.</p>
+</div>
+<img alt="Johannes Carmesin" class="portrait" decoding="async" height="1880" src="/assets/images/johannes2.jpg" width="1880"/></header><section aria-labelledby="team-title" class="home-team" id="team"><h2 id="team-title">Research team</h2>
+<ul class="team-list"><li><a href="https://mekroeker.github.io/">Dr Matthew Kroeker</a></li><li><a href="https://utkuokur.github.io/">Dr Utku Okur</a></li><li><a href="https://wjturner.co.uk/research.html">Will J. Turner</a></li><li><a href="https://vaibhav-baj.github.io/">Vaibhav Bajpai</a></li><li>Chau Do <span class="team-note">(jointly supervised with C. Brause and I. Schiermeyer)</span></li></ul>
+<p class="team-footer"><span>Secretary: Caterina Löschner</span><a href="/past_member/">Past members</a></p></section>
+<section aria-labelledby="research-title" id="research"><h2 id="research-title">Research interests</h2><div class="research-topic">
+<div><img alt="A cone over a complete graph" decoding="async" height="674" loading="lazy" src="/assets/images/cone_over_K5.png" width="601"/></div>
+<div>
+<h3>Combinatorics in 3 dimensions</h3>
 <p>
-	The Discrete Structures group at TU Freiberg works on a broad range of topics in Graph Theory and related areas including Topology and Theoretical Computer Science.
-	For my 3-dimensional Kuratowski-type theorems, I received the <a href="https://en.wikipedia.org/wiki/European_Prize_in_Combinatorics"> European Prize in Combinatorics</a> in 2023.
-
-<br>
-<a href="/assets/CV.pdf">CV</a>
-
-</p>
-
-
-
-<!--
-
-<h2> <p style="color:#FF0000;">Hiring: 3-year Postdoctoral Researcher (ProofBench)</p> </h2>
-
-
-We are recruiting a postdoctoral researcher to take a leading role in the  <a href="https://j-carmesin.github.io/proofbench/proofbench.html">ProofBench</a>    project, which develops a benchmark suite for evaluating AI theorem provers. The successful candidate will take the lead on large-scale grant applications,
-drive the project scientifically, contribute to building collaborations, and engage with the Lean formalisation ecosystem. The position offers the opportunity to shape a new research direction at the interface of mathematics, computer science, and AI.<br>
-
-Informal enquiries are welcome.
-The deadline has been extended to December 1st. To apply please send a CV to johannes.carmesin@gmail.com and follow the instructions in the formal advert.
-
-How to apply: <a href="https://tu-freiberg.de/media/18526/download">Formal advert</a>
-
-
--->
-
-
-
-
-<h2>Research team: </h2>
-
-   <a href="https://scholar.google.co.th/citations?user=qeOCERUAAAAJ&hl=th">Dr Matthew Kroeker </a>  <br>
-   Dr Utku Okur  <br>
- <a href="https://wjturner.co.uk/research.html">Will J. Turner</a>  <br>
-  <a href="https://timplanken.de/">Tim Planken</a>  <br>
-Vaibhav Bajpai <br>
-  Chau Do (jointly supervised with C. Brause and I. Schiermeyer)  <br>
-Joseph Devine <br>
-
-
-
-
-<!--
-
-<br>
-
-
-Recent interns: Romain Bourneuf (2023), Georgios Kontogeorgiou (2022), Lyuben Lichev (2019)
-<br>
--->
-<br>
-
-Secretary: Frau Caterina Löschner <br>
-<a href="/past_member"> Past members</a>
-
-<h2>Our research interests include:</h2>
-
-
-
-<div class="topic-container">
-	<div class="ti"><img src="/assets/images/cone_over_K5.png" style="max-height:75%; max-width:75%"></div>
-	<div class="ti">
-		<h3>Combinatorics in 3 dimensions</h3>
-		<p>
 			A key goal here is to extend the fundamental methods from Structural
 Graph Theory to study 2-dimensional simplicial complexes. The starting point for this project is my
 3-dimensional analogue of Kuratowski's theorem.</p>
-	</div>
 </div>
-
-<div class="topic-container">
-	<div class="ti"><img src="/assets/images/kura.png" style="max-height:100%; max-width:100%"></div>
-	<div class="ti">
-		<h3>Graph Minors and Connectivity</h3>
-		<p>A minor of a graph is obtained by deleting and contracting edges.
+</div><!-- AI_HOME_START: approved text, 20 November 2026. -->
+<div class="research-topic" id="ai-and-mathematics"><div><span class="verified-figure"><img alt="A torus with coloured faces, graph edges and a verification tick" decoding="async" height="617" loading="lazy" src="/assets/images/heawood_torus.webp" width="720"/><svg aria-hidden="true" class="verification-mark" focusable="false" viewbox="0 0 32 32"><circle cx="16" cy="16" fill="white" r="15"></circle><path d="M8 16 L14 22 L25 9" fill="none" stroke="#196442" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5"></path></svg></span></div><div>
+<h3>AI and mathematics</h3>
+<p>We study what AI systems can and cannot do in mathematics. We develop benchmarks in Lean, where proposed proofs can be checked automatically, to assess capabilities ranging from producing formal proofs of established results to tackling open research problems. Our work includes LPBench, a formal-to-formal benchmark for evaluating AI systems on research-level mathematics, and blog posts on the capabilities and limitations of current AI systems, written for a broad mathematical audience.</p>
+<p class="read-more"><a href="/ai-mathematics/">Read more</a></p></div></div>
+<!-- AI_HOME_END --><div class="research-topic">
+<div><img alt="Graph minors and planar graphs" decoding="async" height="374" loading="lazy" src="/assets/images/kura.png" width="511"/></div>
+<div>
+<h3>Graph minors and connectivity</h3>
+<p>A minor of a graph is obtained by deleting and contracting edges.
 The connection of Graph Minor Theory with topology is already apparent from this definition as deletions and contractions are
  "dual operations" for plane graphs, and even more so in the <a href="https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem">
 Graph Minor Structure Theorem of Robertson and Seymour </a>. Here I am particularly interested in studying connectivity
 and tree-decompositions, and using its methods in other areas. New approaches include "local separators" of graphs as well as "angry theorems" for 3-connected graphs.</p>
-	</div>
 </div>
-
-<div class="topic-container">
-	<div class="ti"><img src="/assets/images/220px-Fano_plane.png" style="max-height:80%; max-width:80%"></div>
-	<div class="ti">
-		<h3>Matroids</h3>
-		<p>A fundamental theorem in Matroid Theory is Whitney's characterisation of graph planarity in terms of matroids.
+</div><div class="research-topic">
+<div><img alt="The Fano plane" decoding="async" height="220" loading="lazy" src="/assets/images/220px-Fano_plane.png" width="220"/></div>
+<div>
+<h3>Matroids</h3>
+<p>A fundamental theorem in Matroid Theory is Whitney's characterisation of graph planarity in terms of matroids.
 I extended this theorem to 3-dimensional space. Another direction of research is to extend Whitney's theorem to surfaces,
 which led to a characterisation of graphs admitting locally planar embeddings.</p>
-	</div>
 </div>
-<div class="topic-container">
-	<div class="ti"><img src="/assets/images/halin_conj.png" style="max-height:100%; max-width:100%"></div>
-	<div class="ti">
-		<h3>Infinite Graphs</h3>
-		<p>An important tool to study infinite graphs are ends, which can be seen as boundary points at infinity of the graph.
-In my PhD, I proved Halin's end-faithful spanning-tree conjecture in amended form. A big problem in the area is whether countable graphs are well-quasi ordered (this implies an abundance of well-quasi ordering conjectures in finite graph theory as well).</p>
-	</div>
+</div><div class="research-topic">
+<div><img alt="An illustration of ends in an infinite graph" decoding="async" height="696" loading="lazy" src="/assets/images/halin_conj.png" width="1027"/></div>
+<div>
+<h3>Infinite graphs</h3>
+<p>An important tool for studying infinite graphs is the notion of ends, which can be seen as boundary points at infinity of the graph.
+In my PhD, I proved Halin's end-faithful spanning-tree conjecture in amended form. A big problem in the area is whether countable graphs are well-quasi-ordered (this implies an abundance of well-quasi ordering conjectures in finite graph theory as well).</p>
 </div>
-
-
-      </tr>
-    </tbody></table>
-
-
-
-
-
-
+</div></section><section aria-labelledby="selected-papers-title" class="home-selected" id="selected-papers"><h2 id="selected-papers-title">Selected papers</h2><ul class="paper-list"><li><p class="paper-title"><a href="https://arxiv.org/abs/2309.15504">Embedding simply connected 2-complexes in 3-space</a></p><p class="paper-meta"><span class="paper-venue">Memoirs of the American Mathematical Society 319 (2026), no. 1625, 82 pages</span><span class="paper-links"><a href="https://arxiv.org/pdf/2309.15504.pdf">PDF</a><a href="https://arxiv.org/abs/2309.15504">arXiv</a></span></p></li><li><p class="paper-title"><a href="https://arxiv.org/abs/2304.00945">Canonical decompositions of 3-connected graphs</a></p><p class="paper-authors">with J. Kurkofka</p><p class="paper-meta"><span class="paper-venue">Advances in Combinatorics 2025:7, 73 pages; FOCS 2023, pages 1887–1920</span><span class="paper-links"><a href="https://arxiv.org/pdf/2304.00945.pdf">PDF</a><a href="https://arxiv.org/abs/2304.00945">arXiv</a><a href="https://doi.org/10.19086/aic.2025.7">DOI</a></span></p></li><li><p class="paper-title"><a href="https://arxiv.org/abs/2008.03032">Local 2-separators</a></p><p class="paper-meta"><span class="paper-venue">Journal of Combinatorial Theory, Series B 156 (2022), pages 101–144</span><span class="paper-links"><a href="https://arxiv.org/pdf/2008.03032">PDF</a><a href="https://arxiv.org/abs/2008.03032">arXiv</a></span></p></li><li><p class="paper-title"><a href="https://arxiv.org/abs/2504.00704">A Graph Minors Approach to Temporal Sequences</a></p><p class="paper-authors">with W. J. Turner</p><p class="paper-meta"><span class="paper-venue">STOC 2026, pages 1388–1396</span><span class="paper-links"><a href="https://arxiv.org/pdf/2504.00704">PDF</a><a href="https://arxiv.org/abs/2504.00704">arXiv</a></span></p></li><li><p class="paper-title"><a href="/graph_theory.pdf">Graph Theory - A Survey on the Occasion of the Abel Prize for László Lovász</a></p><p class="paper-meta"><span class="paper-venue">Jahresbericht der Deutschen Mathematiker-Vereinigung 124(2) (2022), pages 83–108</span><span class="paper-links"><a href="/graph_theory.pdf">PDF</a></span></p></li></ul></section>
 </article>
-
-      </main>
-    </div>
-    <footer class="main-footer">
- <!--   &copy; Johannes Carmesin 2025-->
+</main>
+</div>
+<footer class="main-footer">
+<!--   &copy; Johannes Carmesin 2025-->
 </footer>
+</body>
 
-  </body>
-
-  <script>
-  function initThemeHandler(){const e=document.querySelector('select[id="theme"]'),t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light",o=localStorage.getItem("theme"),n=document.querySelector('meta[name="theme-color"]'),a=getComputedStyle(document.body);function r(e){"dark"===e?document.body.classList.add("dark"):document.body.classList.remove("dark");const t=a.getPropertyValue("--clr-background");n.setAttribute("content",t)}e.value=o||"system",r("dark"===o||"light"===o?o:t),e.addEventListener("change",(()=>{"system"===e.value?r(t):r(e.value),localStorage.setItem("theme",e.value)}))}function initFontHandler(){const e=getComputedStyle(document.body),t=e.getPropertyValue("--ff-sans-serif"),o=e.getPropertyValue("--ff-serif"),n=localStorage.getItem("font"),a=document.querySelector('select[id="font"]');function r(e){document.body.style.fontFamily="serif"===e?o:t}"serif"===n&&(r(n),a.value=n),a.addEventListener("change",(()=>{r(a.value),localStorage.setItem("font",a.value)}))}initThemeHandler(),initFontHandler();
-  </script>
 </html>

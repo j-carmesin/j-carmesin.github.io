@@ -1,0 +1,28 @@
+.archive-notice {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1rem 0 1.75rem;
+  padding: .8rem 1rem;
+  border-left: 3px solid #005f9e;
+  background: #edf4f9;
+  color: #304451;
+  font: .9375rem/1.55 -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  text-align: left;
+}
+.archive-notice a { color: #005f9e; text-decoration: underline; text-underline-offset: .17em; }
+.archive-page > .archive-notice { max-width: 800px; margin-left: auto; margin-right: auto; }
+.archive-page > header + .archive-notice { margin-top: 1.25rem; }
+.archive-page a:focus-visible { outline: 2px solid #005f9e; outline-offset: 3px; }
+.archive-page .talk h2.title { font-size: 1.1rem; font-weight: normal; }
+.archive-page .talk .abstract { text-align: left; }
+.archive-page .table-scroll { max-width: 100%; overflow-x: auto; margin: 1rem 0; }
+.archive-page .table-scroll table { min-width: 650px; width: 100%; }
+.archive-page .table-scroll th,.archive-page .table-scroll td { border: 1px solid #dfe6ec; padding: .55rem; text-align: left; }
+.archive-page .table-scroll th { background: #edf4f9; }
+.archive-page math { font-size: 1em; }
+@media (max-width: 720px) {
+  body.archive-page { margin: 1rem auto; padding: 0 1rem; }
+  .archive-page h1 { font-size: 1.75rem; }
+  .archive-page .main-container { padding-left: 0; padding-right: 0; }
+  .archive-page .main-image { padding: .5rem 0; }
+}

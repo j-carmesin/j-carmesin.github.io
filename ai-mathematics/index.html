@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/styles/a11y-code.css" rel="stylesheet"/>
+<link href="/assets/images/cone_over_K5_t.png" rel="icon" sizes="96x96" type="image/png"/>
+
+<meta content="AI and mathematics" property="og:title"/>
+<meta content="" property="og:image"/>
+<meta content="Research on AI capabilities in mathematics, Lean proof verification and LPBench." property="og:description"/>
+<meta content="Research on AI capabilities in mathematics, Lean proof verification and LPBench." name="description"/>
+<!-- Google verification -->
+<meta content="EKJWRsDtZ1bQqNvo9WOFtTuoBNWuKCShs_g8KZmyxlc" name="google-site-verification"/>
+<meta content="Johannes Carmesin, academic website, graph theory, matroids, 3D combinatorics" name="keywords"/>
+<meta content="#0f0f11" name="theme-color"/>
+<title>AI and mathematics | Johannes Carmesin</title>
+<link href="/styles/site.css" rel="stylesheet"/><link href="https://j-carmesin.github.io/ai-mathematics/" rel="canonical"/></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<div class="main-container">
+<aside class="side-nav">
+<div class="side-nav-inner">
+<!-- <a class="site-title" href="/">
+
+          </a> -->
+<nav aria-label="Main navigation"><ul><li><a href="/">Home</a></li><li><a href="/publications/">Publications</a></li><li><a href="/group_papers/">Group papers</a></li><li><a aria-current="page" class="active" href="/ai-mathematics/">AI and mathematics</a></li><li><a href="https://mekroeker.github.io/seminar.html">Research seminar</a></li><li><a href="/events/">Events</a></li><li><a href="/photos/">Photos</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
+</div>
+</aside>
+<main id="main" tabindex="-1">
+<article class="ai-page"><h1>AI and mathematics</h1>
+<!-- AI_PAGE_START: approved text, 20 November 2026; no bold emphasis in the body. -->
+<div class="ai-intro"><p>We study what AI systems can and cannot do in mathematics. Our work combines benchmarks in Lean, formal verification and mathematical case studies.</p><span class="verified-figure"><img alt="A torus with coloured faces, graph edges and a verification tick" decoding="async" height="617" src="/assets/images/heawood_torus.webp" width="720"/><svg aria-hidden="true" class="verification-mark" focusable="false" viewbox="0 0 32 32"><circle cx="16" cy="16" fill="white" r="15"></circle><path d="M8 16 L14 22 L25 9" fill="none" stroke="#196442" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5"></path></svg></span></div>
+<nav aria-label="On this page" class="page-jumps"><a href="#matroid-intersection">Matroid intersection</a><a href="#lpbench">LPBench</a><a href="#cycle-double-cover">Cycle double cover</a></nav>
+<section aria-labelledby="matroid-intersection"><h2 id="matroid-intersection">Matroid intersection: where AI and human mathematics stand</h2>
+<p>In October 2026, OpenAI released a collection of over 700 mathematical manuscripts, presented in its <a href="https://github.com/openai/math/blob/main/overview.pdf">OpenAI Research Catalog</a>. Entry #185 presents a counterexample to the unrestricted packing/covering conjecture that Nathan Bowler and I formulated during my PhD. Yet Nash-Williams’ conjecture and the more general tame case remain open.</p>
+<p>Here, AI has taken the lead in constructing counterexamples, while Attila Joó’s 2021 theorem for finitary matroids on a countable ground set remains, in my assessment, the strongest positive result. The article explores this contrast and suggests that reports of AI breakthroughs would benefit from a fuller discussion of unsuccessful attempts, the scope and limitations of the results, and directions for future research—in the spirit of a thoughtful discussion section in a mathematical paper.</p>
+<p class="read-more"><a href="https://matroidunion.org/?p=6408">Read “The Matroid Intersection Conjecture” on The Matroid Union</a>.</p></section>
+<section aria-labelledby="lpbench"><h2 id="lpbench">LPBench: measuring mathematical capabilities</h2>
+<p><a href="https://lp-bench.github.io/">LPBench</a> is a formal-to-formal benchmark for mathematics at research level: problems are stated in Lean, and systems must produce proofs that Lean can check. It includes established theorems and open research problems, primarily in combinatorics and graph theory. We use it to evaluate current AI systems under specified, reproducible conditions.</p>
+<p>Our first evaluations showed strong performance in generating formal proofs of results from the literature, while the open problems remained unresolved in these experiments. This distinction helps us assess both the practical uses of current systems and the challenges that remain.</p>
+<p class="read-more"><a href="https://zenodo.org/records/24195212">Read the LPBench paper</a>.</p></section>
+<section aria-labelledby="cycle-double-cover"><h2 id="cycle-double-cover">The cycle double cover theorem: verification and understanding</h2>
+<p>Together with Vaibhav Bajpai and Utku Okur, I provided a complete Lean formalisation of OpenAI’s proof of the cycle double cover conjecture. This contributed to the discussion of verification standards while expectations for AI-generated research proofs were still taking shape. Independent efforts included Krystal Guo’s formalisation of the core argument and a separate formalisation by OpenAI.</p>
+<p>Our view is that AI-generated research proofs should undergo formal verification before mathematicians are asked to devote substantial time to assessing them. The formal statement must also be checked against the intended theorem.</p>
+<p>A current challenge is to make AI’s contribution to mathematics sustainable by ensuring that its results come with clear exposition. Mathematicians care deeply about presenting their findings clearly. In my view, for each AI-generated research result, ten times the funding spent on solving the problem should be devoted to having AI explain and document the solution. I regard this as a fair expectation: in my experience, it broadly reflects the balance of time most mathematicians invest in finding a proof and developing its exposition. Producing that exposition should be part of the AI system’s task; it should not become an additional burden on the mathematical community.</p>
+<p class="read-more"><a href="https://matroidunion.org/?p=6255">Read “The cycle double cover theorem” on The Matroid Union</a>.</p></section>
+<!-- AI_PAGE_END -->
+<section aria-labelledby="proofbench-workshop"><h2 id="proofbench-workshop">ProofBench workshop</h2>
+<p>In April 2025, we began evaluating the mathematical capabilities of AI systems using Lean. Our first <a href="/proofbench/proofbench.html">ProofBench workshop</a> took place in Freiberg from 22 September to 3 October 2025.</p></section>
+</article>
+</main>
+</div>
+<footer class="main-footer">
+<!--   &copy; Johannes Carmesin 2025-->
+</footer>
+</body>
+
+</html>
